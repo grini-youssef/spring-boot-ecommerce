@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.grini.ecommerce.entity.ProductCategory;
 
-
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200","https://ecommerce33.herokuapp.com"})
 @RepositoryRestResource(collectionResourceRel = "productCategory", path = "product-category")
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long> {
 

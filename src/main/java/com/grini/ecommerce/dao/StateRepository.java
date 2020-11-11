@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.grini.ecommerce.entity.State;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200","https://ecommerce33.herokuapp.com"})
 @RepositoryRestResource
 public interface StateRepository extends JpaRepository<State,Integer>{
 	

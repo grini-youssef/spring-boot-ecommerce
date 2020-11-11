@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.grini.ecommerce.entity.Product;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200","https://ecommerce33.herokuapp.com"})
 public interface ProductRepository extends JpaRepository<Product, Long> {
 	
 	Page<Product> findByCategoryId(@RequestParam("id") Long id , Pageable pageable);
