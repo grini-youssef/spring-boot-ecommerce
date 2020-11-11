@@ -1,0 +1,1 @@
+web: java -Dspring.profiles.active=prod -Dserver.port=$PORT -jar target/spring-boot-ecommerce-1.0.jar
